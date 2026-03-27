@@ -141,7 +141,7 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.025em; font-weight: 800; }
 .dropdown { position: relative; }
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%) translateY(-6px);
   background: #fff;
@@ -150,7 +150,7 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.025em; font-weight: 800; }
   min-width: 220px;
   z-index: 100;
   border: 1px solid var(--border);
-  padding: 0.5rem;
+  padding: 8px 0.5rem 0.5rem; /* 8px top padding replaces the gap so hover stays connected */
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition), transform var(--transition);
