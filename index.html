@@ -13,7 +13,7 @@
 <body>
 
 <!-- NAVIGATION -->
-<nav class="navbar">
+<nav class="navbar" id="navbar">
     <div class="navbar-inner">
         <a href="index.html" class="navbar-logo">
             <img src="assets/img/icf-logo-corporateGreen.png" alt="IncentiFind Logo" />
@@ -23,7 +23,7 @@
             <li class="dropdown">
                 <button class="dropdown-toggle">
                     Find Incentives
-                    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                 </button>
                 <div class="dropdown-menu">
                     <a href="homeowner.html">Homeowner Search</a>
@@ -35,7 +35,7 @@
             <li class="dropdown">
                 <button class="dropdown-toggle">
                     About Us
-                    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                 </button>
                 <div class="dropdown-menu">
                     <a href="about-us.html">About Us</a>
@@ -45,7 +45,7 @@
             <li class="dropdown">
                 <button class="dropdown-toggle">
                     Media
-                    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                 </button>
                 <div class="dropdown-menu">
                     <a href="media.html">Press Releases</a>
@@ -56,7 +56,7 @@
             <li class="dropdown">
                 <button class="dropdown-toggle">
                     Support
-                    <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                 </button>
                 <div class="dropdown-menu">
                     <a href="faq.html">FAQ</a>
@@ -68,7 +68,7 @@
 
         <div class="navbar-actions">
             <a href="https://app.incentifind.com/login" class="btn-login">Login</a>
-            <span style="color:#174E53;">/</span>
+            <span style="color:var(--border);">/</span>
             <a href="https://app.incentifind.com/register" class="btn-signup">Sign Up</a>
             <a href="commercial.html" class="btn-cta">Run a Free Search</a>
         </div>
@@ -82,7 +82,7 @@
 <!-- MOBILE NAV -->
 <div class="mobile-nav" id="mobileNav">
     <div class="mobile-nav-close">
-        <a href="index.html"><img src="assets/img/icf-logo-white.png" alt="IncentiFind" style="height:40px;" /></a>
+        <a href="index.html"><img src="assets/img/icf-logo-white.png" alt="IncentiFind" style="height:38px;" /></a>
         <button onclick="document.getElementById('mobileNav').classList.remove('open')" style="background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;">✕</button>
     </div>
     <div class="mobile-nav-links">
@@ -98,7 +98,7 @@
     </div>
     <div class="mobile-nav-actions">
         <a href="https://app.incentifind.com/login">Login</a>
-        <a href="https://app.incentifind.com/register">Sign Up</a>
+        <a href="https://app.incentifind.com/register">Sign Up Free</a>
     </div>
 </div>
 
@@ -106,21 +106,27 @@
 <section class="hero">
     <div class="hero-inner">
         <div class="hero-text">
+            <div class="hero-eyebrow">🌿 Green Building Incentives</div>
             <h1>
-                We connect <br />
-                you to <span class="highlight">$70B</span><br />
-                in incentives.
+                We connect you<br />
+                to <span class="highlight">$70B</span> in<br />
+                incentives.
             </h1>
-            <p>Your incentive resource from search to savings</p>
+            <p>Your incentive resource from search to savings — serving every property type across all 50 states.</p>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+                <a href="commercial.html" class="btn-primary">Commercial</a>
+                <a href="homeowner.html" class="btn-outline">Homeowner</a>
+            </div>
         </div>
 
         <div class="hero-card">
-            <h2>Run a search for green<br />building incentives. <strong>It's free!</strong></h2>
+            <h2>Run a free search for green building incentives</h2>
+            <p class="hero-card-sub">No account required. Find incentives in seconds.</p>
             <div class="hero-buttons">
-                <a href="commercial.html" class="btn-primary">Commercial</a>
-                <a href="homeowner.html" class="btn-primary">Homeowner</a>
+                <a href="commercial.html" class="btn-primary">Search Commercial</a>
+                <a href="homeowner.html" class="btn-outline">Search Homeowner</a>
             </div>
-            <p class="hero-card-hint">Choose one to begin.</p>
+            <p class="hero-card-hint">500+ programs across all 50 states</p>
         </div>
     </div>
 </section>
@@ -128,53 +134,96 @@
 <!-- WHY INCENTIFIND -->
 <section class="why-section">
     <div class="why-inner">
-        <h2>Why IncentiFind</h2>
-        <p>
-            IncentiFind is the go-to database of green building incentives, with
-            <strong>$500 million in savings</strong> already identified. We find
-            <strong>all incentives a property is eligible to capture</strong>,
-            and we provide streamlined action steps that
-            <strong>simplify your application process</strong>. Serving all asset
-            types, we are a comprehensive solution for green building incentives.
-        </p>
+        <div class="why-left">
+            <span class="eyebrow">Why IncentiFind</span>
+            <h2>$500M in savings <span class="accent">identified.</span></h2>
+            <p>IncentiFind is the go-to database of green building incentives. We find all incentives a property is eligible to capture, and provide streamlined action steps that simplify your application process.</p>
+        </div>
+        <div class="why-right">
+            <div class="why-card">
+                <div class="why-card-icon">🔍</div>
+                <h3>Comprehensive Search</h3>
+                <p>Access 500+ incentive programs from federal, state, utility, and local sources — all in one place.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-card-icon">📋</div>
+                <h3>Detailed Property Reports</h3>
+                <p>Get a full breakdown of every incentive your property qualifies for, with streamlined action steps.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-card-icon">🤝</div>
+                <h3>Managed Applications</h3>
+                <p>Our Apply Services team handles the full application process on your behalf — success fee only.</p>
+            </div>
+            <div class="why-card">
+                <div class="why-card-icon">🏢</div>
+                <h3>All Asset Types</h3>
+                <p>Residential homes, multifamily, commercial, industrial — we serve every property type.</p>
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- TESTIMONIALS -->
 <section class="testimonials">
     <div class="testimonials-inner">
-        <hr class="divider" />
-        <h2>Discover Why People <span style="color:#f9d423;">Love Us!</span></h2>
+        <span class="eyebrow">Customer Stories</span>
+        <h2 class="section-title">Discover why people <span style="color:var(--cool-green);">love us</span></h2>
         <div class="testimonials-grid">
-            <div class="testimonial-card">
+            <div class="testimonial-card fade-up">
+                <div class="stars">★★★★★</div>
                 <p>"I love how the reports are organized! They are interactive and functional, making it easy for me to use them on the job."</p>
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-name">Rohanda G.</p>
-                <p class="testimonial-role">Building Maintenance</p>
+                <div class="testimonial-footer">
+                    <div class="testimonial-avatar">R</div>
+                    <div>
+                        <div class="testimonial-name">Rohanda G.</div>
+                        <div class="testimonial-role">Building Maintenance</div>
+                    </div>
+                </div>
             </div>
-            <div class="testimonial-card">
+            <div class="testimonial-card fade-up">
+                <div class="stars">★★★★★</div>
                 <p>"The process of getting incentive data is very straightforward, which I appreciate. It's also helpful that other property managers can access the information so easily."</p>
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-name">Karl S.</p>
-                <p class="testimonial-role">Assistant Property Manager</p>
+                <div class="testimonial-footer">
+                    <div class="testimonial-avatar">K</div>
+                    <div>
+                        <div class="testimonial-name">Karl S.</div>
+                        <div class="testimonial-role">Assistant Property Manager</div>
+                    </div>
+                </div>
             </div>
-            <div class="testimonial-card">
+            <div class="testimonial-card fade-up">
+                <div class="stars">★★★★★</div>
                 <p>"I found the information intuitive as you're going through it and very comprehensive – there are so many incentives out there!"</p>
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-name">Marcus J.</p>
-                <p class="testimonial-role">Sustainability Director</p>
+                <div class="testimonial-footer">
+                    <div class="testimonial-avatar">M</div>
+                    <div>
+                        <div class="testimonial-name">Marcus J.</div>
+                        <div class="testimonial-role">Sustainability Director</div>
+                    </div>
+                </div>
             </div>
-            <div class="testimonial-card">
+            <div class="testimonial-card fade-up">
+                <div class="stars">★★★★★</div>
                 <p>"Incentive dollars are a must for financing improvements to small and mid-size businesses. It is great being able to see everything through a single dashboard."</p>
-                <div class="stars">★★★★★</div>
-                <p class="testimonial-name">Brenda B.</p>
-                <p class="testimonial-role">Energy Consultant</p>
+                <div class="testimonial-footer">
+                    <div class="testimonial-avatar">B</div>
+                    <div>
+                        <div class="testimonial-name">Brenda B.</div>
+                        <div class="testimonial-role">Energy Consultant</div>
+                    </div>
+                </div>
             </div>
-            <div class="testimonial-card">
-                <p>"Incentives have become essential to a lot of our projects. With IncentiFind, we can make sure we aren't missing out on any incentive programs."</p>
+            <div class="testimonial-card fade-up">
                 <div class="stars">★★★★★</div>
-                <p class="testimonial-name">Francesca A.</p>
-                <p class="testimonial-role">Facility Owner &amp; Operator</p>
+                <p>"Incentives have become essential to a lot of our projects. With IncentiFind, we can make sure we aren't missing out on any incentive programs."</p>
+                <div class="testimonial-footer">
+                    <div class="testimonial-avatar">F</div>
+                    <div>
+                        <div class="testimonial-name">Francesca A.</div>
+                        <div class="testimonial-role">Facility Owner &amp; Operator</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -183,25 +232,24 @@
 <!-- 3-STEP PROCESS -->
 <section class="steps-section">
     <div class="steps-inner">
-        <hr class="divider" />
-        <h2>Our 3-Step Process:</h2>
+        <span class="eyebrow">How It Works</span>
+        <h2 class="section-title">Our 3-step process</h2>
         <div class="steps-grid">
-            <div class="step-card">
+            <div class="step-card fade-up">
                 <div class="step-number">1</div>
-                <div class="step-title">SEARCH</div>
-                <p>Find the best incentives for your next project with our search tools. Start with a free search to preview the incentives available to your property and get an estimate of cost savings. You can also see what kinds of incentives are available before you purchase a Property Report.</p>
-                <br/>
-                <a href="commercial.html" class="btn-primary" style="font-size:0.85rem;padding:0.5rem 1.25rem;">Run a Free Search Now</a>
+                <div class="step-title">Search</div>
+                <p>Find the best incentives for your next project with our free search tools. Preview the incentives available to your property and get an estimate of cost savings before you commit to anything.</p>
+                <a href="commercial.html" class="btn-primary" style="font-size:0.875rem;padding:0.625rem 1.5rem;">Run a Free Search</a>
             </div>
-            <div class="step-card">
+            <div class="step-card fade-up">
                 <div class="step-number">2</div>
-                <div class="step-title">APPLY</div>
-                <p>Follow streamlined action steps that simplify your application process. You receive all incentives your property is eligible to capture with the Property Report — your comprehensive guide to incentive capture, with streamlined action steps and connections to approved installers and contractors.</p>
+                <div class="step-title">Apply</div>
+                <p>Receive a comprehensive Property Report — your complete guide to incentive capture — with streamlined action steps, connections to approved installers, and access to our Apply Services team.</p>
             </div>
-            <div class="step-card">
+            <div class="step-card fade-up">
                 <div class="step-number">3</div>
-                <div class="step-title">SAVE</div>
-                <p>Get money back in your budget with IncentiFind. Take the guesswork out of incentive capture with our proven process. We have already identified over <strong>$500 million</strong> in savings for customers. Let us identify savings for your property — so that you can maximize your budget with minimal effort!</p>
+                <div class="step-title">Save</div>
+                <p>Get money back in your budget. We have already identified over <strong>$500 million</strong> in savings for customers. Let us identify savings for your property so you can maximize your budget with minimal effort.</p>
             </div>
         </div>
     </div>
@@ -210,33 +258,32 @@
 <!-- METRICS -->
 <section class="metrics-section">
     <div class="metrics-inner">
-        <hr class="divider" />
         <div class="ytd-badge">YTD Metrics</div>
-        <h2 class="metrics-title">The Numbers We Are Proud of</h2>
+        <h2 class="metrics-title">The numbers we're proud of</h2>
         <div class="metrics-grid">
-            <div class="metric-card">
+            <div class="metric-card fade-up">
                 <div class="metric-over">Over</div>
                 <div class="metric-value">34.2M</div>
-                <div class="metric-label">square feet served</div>
-                <p style="font-size:0.8rem;color:#0D2E30;opacity:0.6;margin-top:0.5rem;">Approx. 656 football fields of real estate served.</p>
+                <div class="metric-label">Square feet served</div>
+                <p class="metric-desc">Approx. 656 football fields of real estate served.</p>
             </div>
-            <div class="metric-card">
+            <div class="metric-card fade-up">
                 <div class="metric-over">Over</div>
                 <div class="metric-value">39.8M</div>
                 <div class="metric-label">kWh saved per year</div>
-                <p style="font-size:0.8rem;color:#0D2E30;opacity:0.6;margin-top:0.5rem;">Equivalent to powering 3,000 homes!</p>
+                <p class="metric-desc">Equivalent to powering 3,000 homes!</p>
             </div>
-            <div class="metric-card">
+            <div class="metric-card fade-up">
                 <div class="metric-over">Over</div>
                 <div class="metric-value">19.4M</div>
                 <div class="metric-label">Gallons saved per year</div>
-                <p style="font-size:0.8rem;color:#0D2E30;opacity:0.6;margin-top:0.5rem;">Enough to fill 300 swimming pools!</p>
+                <p class="metric-desc">Enough to fill 300 swimming pools!</p>
             </div>
-            <div class="metric-card">
+            <div class="metric-card fade-up">
                 <div class="metric-over">Over</div>
                 <div class="metric-value">16.8K</div>
                 <div class="metric-label">kWh Generated per year</div>
-                <p style="font-size:0.8rem;color:#0D2E30;opacity:0.6;margin-top:0.5rem;">Powering 5 homes with clean energy!</p>
+                <p class="metric-desc">Powering 5 homes with clean energy!</p>
             </div>
         </div>
     </div>
@@ -254,9 +301,10 @@
     <div class="footer-inner">
         <div class="footer-brand">
             <img class="footer-logo" src="assets/img/icf-logo-white.png" alt="IncentiFind" />
+            <p class="footer-tagline">The go-to database for green building incentives across all 50 states.</p>
             <div class="footer-address">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#44A08B" stroke-width="1.5" style="flex-shrink:0;margin-top:2px;"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
-                <p>1801 Main Street, Suite 1300, Houston, Texas 77002</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" style="flex-shrink:0;margin-top:2px;"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                <p>1801 Main Street, Suite 1300<br />Houston, Texas 77002</p>
             </div>
             <div class="footer-social">
                 <a href="https://www.linkedin.com/company/incentifind/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -272,53 +320,85 @@
             </div>
         </div>
 
-        <div>
+        <div class="footer-right">
             <div class="footer-stats">
                 <div class="footer-stat">
                     <p>Over</p>
                     <span>34.2M</span>
-                    <p>Square feet served</p>
+                    <p>Sq ft served</p>
                 </div>
                 <div class="footer-stat">
                     <p>Over</p>
                     <span>39.8M</span>
-                    <p>KWh saved per year</p>
+                    <p>kWh saved/yr</p>
                 </div>
                 <div class="footer-stat">
                     <p>Over</p>
                     <span>19.4M</span>
-                    <p>Gallons saved per year</p>
+                    <p>Gallons saved/yr</p>
                 </div>
                 <div class="footer-stat">
                     <p>Over</p>
                     <span>16.8K</span>
-                    <p>KWh generated per year</p>
+                    <p>kWh generated/yr</p>
                 </div>
             </div>
 
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="about-us.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="faq.html">FAQ</a>
-                <a href="report-issue.html">Report Issue</a>
-                <a href="media.html">Media Release</a>
-                <a href="tos.html">Privacy Policy</a>
-            </div>
-            <div class="footer-links">
-                <a href="homeowner.html">Homeowner Search</a>
-                <a href="commercial.html">Commercial Search</a>
-                <a href="pricing.html">Property Report</a>
-                <a href="icfpro.html">IncentiFind Pro</a>
-                <a href="apply-services.html">Apply Services</a>
+            <div class="footer-nav">
+                <div class="footer-nav-group">
+                    <h4>Platform</h4>
+                    <a href="homeowner.html">Homeowner Search</a>
+                    <a href="commercial.html">Commercial Search</a>
+                    <a href="pricing.html">Property Report</a>
+                    <a href="icfpro.html">IncentiFind Pro</a>
+                    <a href="apply-services.html">Apply Services</a>
+                </div>
+                <div class="footer-nav-group">
+                    <h4>Company</h4>
+                    <a href="about-us.html">About Us</a>
+                    <a href="affiliate.html">Affiliate Program</a>
+                    <a href="media.html">Media</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="footer-nav-group">
+                    <h4>Support</h4>
+                    <a href="faq.html">FAQ</a>
+                    <a href="report-issue.html">Report an Issue</a>
+                    <a href="tos.html">Privacy Policy</a>
+                    <a href="tos.html">Terms of Service</a>
+                </div>
             </div>
 
             <div class="footer-bottom">
-                &copy; <script>document.write(new Date().getFullYear())</script> IncentiFind. All rights reserved.
+                <span>&copy; <script>document.write(new Date().getFullYear())</script> IncentiFind. All rights reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="tos.html">Privacy</a>
+                    <a href="tos.html">Terms</a>
+                    <a href="contact.html">Contact</a>
+                </div>
             </div>
         </div>
     </div>
 </footer>
+
+<script>
+// Navbar scroll shadow
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+});
+
+// Fade-up on scroll
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(el => {
+        if (el.isIntersecting) {
+            el.target.classList.add('visible');
+            observer.unobserve(el.target);
+        }
+    });
+}, { threshold: 0.1 });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
