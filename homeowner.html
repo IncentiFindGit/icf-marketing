@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homeowner Incentives – IncentiFind</title>
+    <meta name="description" content="Find green building incentives for your home. IncentiFind identifies all rebates, tax credits, and utility programs your home is eligible to capture." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">
+            <img src="assets/img/icf-logo-corporateGreen.png" alt="IncentiFind Logo" />
+        </a>
+        <ul class="navbar-menu">
+            <li class="dropdown">
+                <button class="dropdown-toggle">Find Incentives <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="dropdown-menu">
+                    <a href="homeowner.html">Homeowner Search</a>
+                    <a href="commercial.html">Commercial Search</a>
+                    <a href="pricing.html">Property Report</a>
+                    <a href="icfpro.html">IncentiFind Pro</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-toggle">About Us <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="dropdown-menu">
+                    <a href="about-us.html">About Us</a>
+                    <a href="affiliate.html">Affiliate Program</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-toggle">Media <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="dropdown-menu">
+                    <a href="media.html">Press Releases</a>
+                    <a href="media.html">Tutorial Videos</a>
+                    <a href="media.html">Blogs &amp; Insights</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-toggle">Support <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="dropdown-menu">
+                    <a href="faq.html">FAQ</a>
+                    <a href="contact.html">Contact Sales</a>
+                    <a href="report-issue.html">Report an Issue</a>
+                </div>
+            </li>
+        </ul>
+        <div class="navbar-actions">
+            <a href="https://app.incentifind.com/login" class="btn-login">Login</a>
+            <span style="color:#174E53;">/</span>
+            <a href="https://app.incentifind.com/register" class="btn-signup">Sign Up</a>
+            <a href="homeowner.html" class="btn-cta">Run a Free Search</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+    </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-close">
+        <a href="index.html"><img src="assets/img/icf-logo-white.png" alt="IncentiFind" style="height:40px;" /></a>
+        <button onclick="document.getElementById('mobileNav').classList.remove('open')" style="background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+        <a href="homeowner.html">Homeowner Search</a>
+        <a href="commercial.html">Commercial Search</a>
+        <a href="pricing.html">Property Report &amp; Pricing</a>
+        <a href="icfpro.html">IncentiFind Pro</a>
+        <a href="about-us.html">About Us</a>
+        <a href="affiliate.html">Affiliate Program</a>
+        <a href="media.html">Media</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="mobile-nav-actions">
+        <a href="https://app.incentifind.com/login">Login</a>
+        <a href="https://app.incentifind.com/register">Sign Up</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="page-hero page-hero-homeowner">
+    <div class="hero-inner">
+        <div class="page-hero-text">
+            <div class="breadcrumb" style="margin-bottom:1.5rem;">
+                <a href="index.html">Homepage</a>
+                <span>/</span>
+                Homeowner
+            </div>
+            <h1>Find incentives for your <span style="color:#f9d423;">home</span></h1>
+            <p>IncentiFind identifies all green building incentives your home is eligible to capture — energy efficiency rebates, solar credits, utility programs, and more.</p>
+            <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+                <a href="https://app.incentifind.com/register" class="btn-primary">Run a Free Search</a>
+                <a href="pricing.html" class="btn-outline">View Property Reports</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS BAR -->
+<div style="background:#0D2E30;padding:2rem;">
+    <div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-around;flex-wrap:wrap;gap:1.5rem;text-align:center;">
+        <div><div style="font-size:2.25rem;font-weight:900;color:#44A08B;">$1,500</div><div style="color:#fff;font-size:0.85rem;font-weight:600;">average savings per homeowner per year</div></div>
+        <div><div style="font-size:2.25rem;font-weight:900;color:#44A08B;">$25</div><div style="color:#fff;font-size:0.85rem;font-weight:600;">per Property Report — active for a full year</div></div>
+        <div><div style="font-size:2.25rem;font-weight:900;color:#44A08B;">4–6 wks</div><div style="color:#fff;font-size:0.85rem;font-weight:600;">average turnaround to receive rebate</div></div>
+        <div><div style="font-size:2.25rem;font-weight:900;color:#44A08B;">125M</div><div style="color:#fff;font-size:0.85rem;font-weight:600;">homes we can serve</div></div>
+    </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="steps-section">
+    <div class="steps-inner">
+        <hr class="divider" />
+        <h2>Our 3-Step Process for Homeowners:</h2>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <div class="step-title">SEARCH</div>
+                <p>The <strong>Property Report</strong> delivers search results on all incentives your home can capture, including:</p>
+                <ul style="margin-top:0.75rem;padding-left:1.25rem;font-size:0.9rem;line-height:2;">
+                    <li>A Soft Estimate of average dollar savings</li>
+                    <li>All incentives your home qualifies for</li>
+                    <li>Streamlined action steps</li>
+                    <li>Direct connection to approved installers</li>
+                </ul>
+                <p style="margin-top:1rem;font-size:0.85rem;opacity:0.7;"><strong>Just $25 per home</strong> — stays active for a full year.</p>
+                <br/>
+                <a href="https://app.incentifind.com/register" class="btn-primary" style="font-size:0.85rem;padding:0.5rem 1.25rem;">Get Started Free</a>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <div class="step-title">APPLY</div>
+                <p>IncentiFind makes capturing incentives simple. After your Property Report, a section called <strong>"Next Steps To Capture"</strong> breaks down every required step into easy action items.</p>
+                <p style="margin-top:0.75rem;">Residential programs are written so homeowners can apply themselves — and we give you everything you need to succeed:</p>
+                <ul style="margin-top:0.75rem;padding-left:1.25rem;font-size:0.9rem;line-height:2;">
+                    <li>How to apply for each incentive</li>
+                    <li>Connection to approved installers</li>
+                    <li>Program requirements, made simple</li>
+                </ul>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <div class="step-title">SAVE</div>
+                <p>Put money back in your home improvement budget:</p>
+                <ul style="margin-top:0.75rem;padding-left:1.25rem;font-size:0.9rem;line-height:2;">
+                    <li><strong>Average $1,500/year</strong> in rebate savings for green measures</li>
+                    <li>4–6 week average turnaround once approved</li>
+                    <li>Report stays active for a full year</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" style="background:#F8FBFC;">
+    <div class="section-inner">
+        <h2 class="section-title" style="text-align:center;margin-bottom:3rem;">Types of Incentives We Find for Homeowners</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;">
+            <div style="background:#fff;border-radius:1rem;padding:1.75rem;border:1px solid #DDECEE;">
+                <div style="font-size:1.75rem;margin-bottom:0.75rem;">⚡</div>
+                <h3 style="font-size:1.05rem;font-weight:800;color:#0D2E30;margin-bottom:0.5rem;">Energy Efficiency</h3>
+                <p style="font-size:0.9rem;color:#0D2E30;opacity:0.75;line-height:1.6;">Rebates and incentives for insulation, HVAC upgrades, smart thermostats, LED lighting, and energy-efficient windows and doors.</p>
+            </div>
+            <div style="background:#fff;border-radius:1rem;padding:1.75rem;border:1px solid #DDECEE;">
+                <div style="font-size:1.75rem;margin-bottom:0.75rem;">☀️</div>
+                <h3 style="font-size:1.05rem;font-weight:800;color:#0D2E30;margin-bottom:0.5rem;">Renewables</h3>
+                <p style="font-size:0.9rem;color:#0D2E30;opacity:0.75;line-height:1.6;">Federal tax credits, state grants, and utility rebates for solar panels, battery storage, EV chargers, and geothermal systems.</p>
+            </div>
+            <div style="background:#fff;border-radius:1rem;padding:1.75rem;border:1px solid #DDECEE;">
+                <div style="font-size:1.75rem;margin-bottom:0.75rem;">🏠</div>
+                <h3 style="font-size:1.05rem;font-weight:800;color:#0D2E30;margin-bottom:0.5rem;">Home Remodeling</h3>
+                <p style="font-size:0.9rem;color:#0D2E30;opacity:0.75;line-height:1.6;">Incentives for green home improvements including roofing, water heaters, appliance upgrades, and weatherization projects.</p>
+            </div>
+            <div style="background:#fff;border-radius:1rem;padding:1.75rem;border:1px solid #DDECEE;">
+                <div style="font-size:1.75rem;margin-bottom:0.75rem;">💰</div>
+                <h3 style="font-size:1.05rem;font-weight:800;color:#0D2E30;margin-bottom:0.5rem;">Tax Incentives</h3>
+                <p style="font-size:0.9rem;color:#0D2E30;opacity:0.75;line-height:1.6;">Federal and state tax credits that reduce your tax bill directly — including the Inflation Reduction Act's expanded homeowner credits.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ACTIVE YEAR ROUND CALLOUT -->
+<section style="padding:4rem 2rem;background:#DDECEE;">
+    <div style="max-width:800px;margin:0 auto;text-align:center;">
+        <h2 style="font-size:2rem;font-weight:900;color:#0D2E30;margin-bottom:1rem;">Active for a Full Year</h2>
+        <p style="font-size:1.05rem;color:#0D2E30;opacity:0.8;line-height:1.75;margin-bottom:2rem;">Your Property Report stays active for 12 months, so you always have access to the most up-to-date incentive information for your home. Incentive programs change frequently — we keep you covered.</p>
+        <a href="pricing.html" class="btn-primary">View Pricing – $25 per Home</a>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+    <div class="testimonials-inner">
+        <hr class="divider" />
+        <h2>Discover Why People <span style="color:#f9d423;">Love Us!</span></h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"I love how the reports are organized! They are interactive and functional, making it easy for me to use them on the job."</p>
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-name">Rohanda G.</p>
+                <p class="testimonial-role">Building Maintenance</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"The process of getting incentive data is very straightforward, which I appreciate."</p>
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-name">Karl S.</p>
+                <p class="testimonial-role">Assistant Property Manager</p>
+            </div>
+            <div class="testimonial-card">
+                <p>"I found the information intuitive as you're going through it and very comprehensive – there are so many incentives out there!"</p>
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-name">Marcus J.</p>
+                <p class="testimonial-role">Sustainability Director</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+    <h2>Ready to find your home incentives?</h2>
+    <p>Start with a free search — no credit card required.</p>
+    <a href="https://app.incentifind.com/register" class="btn-cta-white">Run a Free Search</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <img class="footer-logo" src="assets/img/icf-logo-white.png" alt="IncentiFind" />
+            <div class="footer-address">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#44A08B" stroke-width="1.5" style="flex-shrink:0;margin-top:2px;"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                <p>1801 Main Street, Suite 1300, Houston, Texas 77002</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/incentifind/" target="_blank" rel="noopener noreferrer"><svg fill="currentColor" viewBox="0 0 24 24" style="width:24px;height:24px;"><path fill-rule="evenodd" d="M22.23 0H1.77C.79 0 0 .79 0 1.77v20.46c0 .98.79 1.77 1.77 1.77h20.46c.98 0 1.77-.79 1.77-1.77V1.77C24 .79 23.21 0 22.23 0zM7.5 20.2H4.2V9.4h3.3v10.8zm-1.65-12.3c-1.05 0-1.9-.88-1.9-1.9s.88-1.9 1.9-1.9 1.9.88 1.9 1.9-.88 1.9-1.9 1.9zm14.4 12.3h-3.3v-5.6c0-1.3-.03-2.98-1.8-2.98-1.8 0-2.07 1.4-2.07 2.86v5.7h-3.3v-10.8h3.2v1.5h.04c.45-.83 1.57-1.7 3.18-1.7 3.4 0 4.02 2.25 4.02 5.17v6.03z" clip-rule="evenodd"/></svg></a>
+                <a href="https://www.youtube.com/@IncentiFind" target="_blank" rel="noopener noreferrer"><svg fill="currentColor" viewBox="0 0 24 24" style="width:24px;height:24px;"><path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd"/></svg></a>
+            </div>
+            <div class="footer-certs">
+                <img src="assets/img/mbe-cert.png" alt="MBE" />
+                <img src="assets/img/wbe-cert.png" alt="WBE" />
+            </div>
+        </div>
+        <div>
+            <div class="footer-stats">
+                <div class="footer-stat"><p>Over</p><span>34.2M</span><p>Square feet served</p></div>
+                <div class="footer-stat"><p>Over</p><span>39.8M</span><p>KWh saved per year</p></div>
+                <div class="footer-stat"><p>Over</p><span>19.4M</span><p>Gallons saved per year</p></div>
+                <div class="footer-stat"><p>Over</p><span>16.8K</span><p>KWh generated per year</p></div>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="faq.html">FAQ</a>
+                <a href="report-issue.html">Report Issue</a>
+                <a href="media.html">Media Release</a>
+                <a href="tos.html">Privacy Policy</a>
+            </div>
+            <div class="footer-links">
+                <a href="homeowner.html">Homeowner Search</a>
+                <a href="commercial.html">Commercial Search</a>
+                <a href="pricing.html">Property Report</a>
+                <a href="icfpro.html">IncentiFind Pro</a>
+                <a href="apply-services.html">Apply Services</a>
+            </div>
+            <div class="footer-bottom">&copy; <script>document.write(new Date().getFullYear())</script> IncentiFind. All rights reserved.</div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

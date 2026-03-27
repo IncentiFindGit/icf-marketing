@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ – IncentiFind</title>
+    <meta name="description" content="Frequently asked questions about IncentiFind's green building incentive search, Property Reports, Apply Services, and pricing." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        .faq-group { margin-bottom: 3rem; }
+        .faq-group-title {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: #174E53;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #DDECEE;
+        }
+        details {
+            border: 1px solid #DDECEE;
+            border-radius: 0.75rem;
+            margin-bottom: 0.75rem;
+            background: #fff;
+            overflow: hidden;
+        }
+        summary {
+            padding: 1.1rem 1.25rem;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #0D2E30;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+        summary::-webkit-details-marker { display: none; }
+        summary::after {
+            content: '+';
+            font-size: 1.4rem;
+            color: #174E53;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+        details[open] summary::after { content: '−'; }
+        details[open] summary { border-bottom: 1px solid #DDECEE; }
+        .faq-answer {
+            padding: 1rem 1.25rem 1.25rem;
+            font-size: 0.9rem;
+            color: #0D2E30;
+            line-height: 1.75;
+            opacity: 0.85;
+        }
+        .faq-answer strong { color: #0D2E30; opacity: 1; }
+        .faq-answer a { color: #174E53; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">
+            <img src="assets/img/icf-logo-corporateGreen.png" alt="IncentiFind Logo" />
+        </a>
+        <ul class="navbar-menu">
+            <li class="dropdown">
+                <button class="dropdown-toggle">Find Incentives <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="dropdown-menu">
+                    <a href="homeowner.html">Homeowner Search</a>
+                    <a href="commercial.html">Commercial Search</a>
+                    <a href="pricing.html">Property Report</a>
+                    <a href="icfpro.html">IncentiFind Pro</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-toggle">About Us <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="dropdown-menu">
+                    <a href="about-us.html">About Us</a>
+                    <a href="affiliate.html">Affiliate Program</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-toggle">Media <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="dropdown-menu">
+                    <a href="media.html">Press Releases</a>
+                    <a href="media.html">Tutorial Videos</a>
+                    <a href="media.html">Blogs &amp; Insights</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-toggle">Support <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="dropdown-menu">
+                    <a href="faq.html">FAQ</a>
+                    <a href="contact.html">Contact Sales</a>
+                    <a href="report-issue.html">Report an Issue</a>
+                </div>
+            </li>
+        </ul>
+        <div class="navbar-actions">
+            <a href="https://app.incentifind.com/login" class="btn-login">Login</a>
+            <span style="color:#174E53;">/</span>
+            <a href="https://app.incentifind.com/register" class="btn-signup">Sign Up</a>
+            <a href="commercial.html" class="btn-cta">Run a Free Search</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+    </div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-close">
+        <a href="index.html"><img src="assets/img/icf-logo-white.png" alt="IncentiFind" style="height:40px;" /></a>
+        <button onclick="document.getElementById('mobileNav').classList.remove('open')" style="background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+        <a href="homeowner.html">Homeowner Search</a>
+        <a href="commercial.html">Commercial Search</a>
+        <a href="pricing.html">Property Report &amp; Pricing</a>
+        <a href="icfpro.html">IncentiFind Pro</a>
+        <a href="about-us.html">About Us</a>
+        <a href="affiliate.html">Affiliate Program</a>
+        <a href="media.html">Media</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="mobile-nav-actions">
+        <a href="https://app.incentifind.com/login">Login</a>
+        <a href="https://app.incentifind.com/register">Sign Up</a>
+    </div>
+</div>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+    <div class="page-header-inner">
+        <div class="breadcrumb"><a href="index.html">Homepage</a><span>/</span>FAQ</div>
+        <h1>Frequently Asked<br />Questions</h1>
+        <p style="font-size:1.05rem;opacity:0.7;margin-top:0.75rem;max-width:520px;">Everything you need to know about IncentiFind, Property Reports, and incentive capture.</p>
+    </div>
+</section>
+
+<!-- FAQ CONTENT -->
+<section class="section">
+    <div class="section-inner" style="max-width:860px;">
+
+        <!-- General -->
+        <div class="faq-group">
+            <div class="faq-group-title">General</div>
+
+            <details>
+                <summary>What is IncentiFind?</summary>
+                <div class="faq-answer">IncentiFind is the go-to database of green building incentives. We connect commercial properties and homeowners to over $70 billion in incentives offered annually by government entities and utility companies. With <strong>$500 million in savings already identified</strong>, we simplify the entire process from search to savings.</div>
+            </details>
+
+            <details>
+                <summary>Who is IncentiFind for?</summary>
+                <div class="faq-answer">IncentiFind serves both <strong>commercial property owners and managers</strong> (office buildings, retail, multifamily, industrial, and more) and <strong>homeowners</strong> looking to capture rebates, tax credits, and utility incentives for green home improvements.</div>
+            </details>
+
+            <details>
+                <summary>What types of incentives does IncentiFind find?</summary>
+                <div class="faq-answer">We identify incentives across all categories, including:
+                    <ul style="margin-top:0.5rem;padding-left:1.25rem;">
+                        <li>Federal tax credits (e.g., Inflation Reduction Act programs)</li>
+                        <li>State rebate programs</li>
+                        <li>Local government grants</li>
+                        <li>Utility company rebates and efficiency programs</li>
+                        <li>Financing incentives and low-interest green loans</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details>
+                <summary>How much money can I save?</summary>
+                <div class="faq-answer"><strong>Commercial properties</strong> capture an average of <strong>$71,000</strong> in incentive savings. <strong>Homeowners</strong> save an average of <strong>$1,500 per year</strong> in rebates. Your actual savings depend on your property type, location, and scope of green improvements.</div>
+            </details>
+        </div>
+
+        <!-- Free Search -->
+        <div class="faq-group">
+            <div class="faq-group-title">Free Search</div>
+
+            <details>
+                <summary>What is the Free Search?</summary>
+                <div class="faq-answer">The Free Search is a no-cost preview of the incentives available to your property. Enter your address and property type, and we'll show you an overview of the incentive programs you may qualify for. No account required to get started.</div>
+            </details>
+
+            <details>
+                <summary>Is the Free Search really free?</summary>
+                <div class="faq-answer">Yes — completely free, no credit card required. The Free Search gives you a preview of available incentive programs. To unlock the full details, including your verified eligibility, savings estimates, action steps, and installer connections, you'll need a <a href="pricing.html">Property Report</a>.</div>
+            </details>
+
+            <details>
+                <summary>What's the difference between the Free Search and a Property Report?</summary>
+                <div class="faq-answer">The <strong>Free Search</strong> gives you a broad preview of the types of incentives available in your area. The <strong>Property Report</strong> goes much further — it verifies your eligibility for every incentive, provides a Soft Estimate of dollar savings, gives you streamlined action steps to apply, and connects you with approved installers. For commercial properties, it also automatically enrolls you in Apply Services.</div>
+            </details>
+        </div>
+
+        <!-- Property Report -->
+        <div class="faq-group">
+            <div class="faq-group-title">Property Report</div>
+
+            <details>
+                <summary>What is a Property Report?</summary>
+                <div class="faq-answer">A Property Report is a detailed digital report that gives you:
+                    <ul style="margin-top:0.5rem;padding-left:1.25rem;">
+                        <li>A <strong>Soft Estimate</strong> of average dollar savings</li>
+                        <li>A <strong>complete verified list</strong> of all incentive programs your property qualifies for</li>
+                        <li><strong>Streamlined action steps</strong> to apply for each program</li>
+                        <li>Connections to <strong>approved installers</strong> (residential) or enrollment in Apply Services (commercial)</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details>
+                <summary>How much does a Property Report cost?</summary>
+                <div class="faq-answer"><strong>Residential:</strong> $25 per home, active for a full year.<br/><strong>Commercial:</strong> $500 per property, active for a full year. Bulk pricing is available for 10 or more properties — <a href="contact.html">contact us</a> for a quote.</div>
+            </details>
+
+            <details>
+                <summary>How long is a Property Report active?</summary>
+                <div class="faq-answer">Both residential and commercial Property Reports are active for <strong>12 full months</strong> from the date of purchase. This ensures you always have access to current incentive information, since programs change frequently throughout the year.</div>
+            </details>
+
+            <details>
+                <summary>How quickly can I get my Property Report?</summary>
+                <div class="faq-answer">Property Reports are generated digitally and are typically available shortly after purchase. You'll be able to access your report directly through your IncentiFind account.</div>
+            </details>
+        </div>
+
+        <!-- Apply Services -->
+        <div class="faq-group">
+            <div class="faq-group-title">Apply Services (Commercial)</div>
+
+            <details>
+                <summary>What is Apply Services?</summary>
+                <div class="faq-answer">Apply Services is IncentiFind's application fulfillment service for commercial properties. When you purchase a commercial Property Report, your report automatically moves into Apply Services, where our expert team manages your entire incentive application process on your behalf.</div>
+            </details>
+
+            <details>
+                <summary>How does the 30% success fee work?</summary>
+                <div class="faq-answer">Apply Services charges a <strong>30% success fee on the incentive dollars we capture for you</strong>. We don't collect anything until money is in your hands. This aligns our interests with yours — we only win when you win.</div>
+            </details>
+
+            <details>
+                <summary>Is Apply Services available for homeowners?</summary>
+                <div class="faq-answer">Apply Services is currently available for <strong>commercial properties only</strong>. Residential incentive programs are typically written so homeowners can apply themselves, and our Property Report provides all the guidance you need. We connect you directly to approved installers who can also assist with the process.</div>
+            </details>
+
+            <details>
+                <summary>What does Apply Services actually do?</summary>
+                <div class="faq-answer">Our Apply Services team:
+                    <ul style="margin-top:0.5rem;padding-left:1.25rem;">
+                        <li>Monitors your application and answers time-sensitive requests from incentive programs</li>
+                        <li>Provides monthly status updates and collects construction progress from you</li>
+                        <li>Communicates directly with program managers at 500+ programs nationwide</li>
+                        <li>Leverages our incentive expertise to maximize your capture rate</li>
+                        <li>May reserve incentive funding in advance once a scope of work is defined</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+        <!-- Residential -->
+        <div class="faq-group">
+            <div class="faq-group-title">Homeowners</div>
+
+            <details>
+                <summary>What kinds of home improvements qualify for incentives?</summary>
+                <div class="faq-answer">Common qualifying improvements include solar panel installation, battery storage systems, EV chargers, high-efficiency HVAC, insulation and air sealing, energy-efficient windows and doors, smart thermostats, water heaters, and more. Eligibility varies by location and program.</div>
+            </details>
+
+            <details>
+                <summary>How long does it take to receive a rebate?</summary>
+                <div class="faq-answer">After you complete your incentive application and get approved, it takes an average of <strong>4 to 6 weeks</strong> to receive your rebate. This timeline can vary depending on the specific incentive program and the time of year.</div>
+            </details>
+
+            <details>
+                <summary>Do I need a contractor to apply for incentives?</summary>
+                <div class="faq-answer">Many incentive programs require you to use an approved or certified installer — especially for solar, HVAC, and efficiency upgrades. Your Property Report will identify which programs have this requirement, and we'll connect you directly to approved installers in your area.</div>
+            </details>
+        </div>
+
+        <!-- Account -->
+        <div class="faq-group">
+            <div class="faq-group-title">Account &amp; Billing</div>
+
+            <details>
+                <summary>Do I need an account to run a Free Search?</summary>
+                <div class="faq-answer">No — you can run a Free Search without creating an account. However, you will need to create a free account to purchase a Property Report and access your results.</div>
+            </details>
+
+            <details>
+                <summary>How do I purchase a Property Report?</summary>
+                <div class="faq-answer">Start by running a <a href="index.html">Free Search</a> for your property. After seeing your preview results, you can purchase the full Property Report directly from your search results page. You'll be prompted to create an account if you don't already have one.</div>
+            </details>
+
+            <details>
+                <summary>Can I get a refund?</summary>
+                <div class="faq-answer">Please <a href="contact.html">contact our support team</a> if you have concerns about your purchase. We're committed to making sure you get value from your Property Report.</div>
+            </details>
+        </div>
+
+        <!-- Still have questions -->
+        <div style="background:#DDECEE;border-radius:1.5rem;padding:2.5rem;text-align:center;margin-top:3rem;">
+            <h2 style="font-size:1.5rem;font-weight:800;color:#0D2E30;margin-bottom:0.75rem;">Still have questions?</h2>
+            <p style="color:#0D2E30;opacity:0.75;margin-bottom:1.5rem;">Our team is happy to help. Reach out and we'll get back to you quickly.</p>
+            <a href="contact.html" class="btn-primary">Contact Our Sales Team</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <img class="footer-logo" src="assets/img/icf-logo-white.png" alt="IncentiFind" />
+            <div class="footer-address">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#44A08B" stroke-width="1.5" style="flex-shrink:0;margin-top:2px;"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                <p>1801 Main Street, Suite 1300, Houston, Texas 77002</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/incentifind/" target="_blank" rel="noopener noreferrer"><svg fill="currentColor" viewBox="0 0 24 24" style="width:24px;height:24px;"><path fill-rule="evenodd" d="M22.23 0H1.77C.79 0 0 .79 0 1.77v20.46c0 .98.79 1.77 1.77 1.77h20.46c.98 0 1.77-.79 1.77-1.77V1.77C24 .79 23.21 0 22.23 0zM7.5 20.2H4.2V9.4h3.3v10.8zm-1.65-12.3c-1.05 0-1.9-.88-1.9-1.9s.88-1.9 1.9-1.9 1.9.88 1.9 1.9-.88 1.9-1.9 1.9zm14.4 12.3h-3.3v-5.6c0-1.3-.03-2.98-1.8-2.98-1.8 0-2.07 1.4-2.07 2.86v5.7h-3.3v-10.8h3.2v1.5h.04c.45-.83 1.57-1.7 3.18-1.7 3.4 0 4.02 2.25 4.02 5.17v6.03z" clip-rule="evenodd"/></svg></a>
+                <a href="https://www.youtube.com/@IncentiFind" target="_blank" rel="noopener noreferrer"><svg fill="currentColor" viewBox="0 0 24 24" style="width:24px;height:24px;"><path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd"/></svg></a>
+            </div>
+            <div class="footer-certs">
+                <img src="assets/img/mbe-cert.png" alt="MBE" />
+                <img src="assets/img/wbe-cert.png" alt="WBE" />
+            </div>
+        </div>
+        <div>
+            <div class="footer-stats">
+                <div class="footer-stat"><p>Over</p><span>34.2M</span><p>Square feet served</p></div>
+                <div class="footer-stat"><p>Over</p><span>39.8M</span><p>KWh saved per year</p></div>
+                <div class="footer-stat"><p>Over</p><span>19.4M</span><p>Gallons saved per year</p></div>
+                <div class="footer-stat"><p>Over</p><span>16.8K</span><p>KWh generated per year</p></div>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="faq.html">FAQ</a>
+                <a href="report-issue.html">Report Issue</a>
+                <a href="media.html">Media Release</a>
+                <a href="tos.html">Privacy Policy</a>
+            </div>
+            <div class="footer-links">
+                <a href="homeowner.html">Homeowner Search</a>
+                <a href="commercial.html">Commercial Search</a>
+                <a href="pricing.html">Property Report</a>
+                <a href="icfpro.html">IncentiFind Pro</a>
+                <a href="apply-services.html">Apply Services</a>
+            </div>
+            <div class="footer-bottom">&copy; <script>document.write(new Date().getFullYear())</script> IncentiFind. All rights reserved.</div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
