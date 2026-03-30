@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting... – IncentiFind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script>
+        (function() {
+            var path = window.location.pathname;
+            var appPaths = ['/verify-report/', '/quick-summary/', '/projects/', '/incentifind-pro', '/create-verify-report'];
+            var shouldRedirect = appPaths.some(function(p) { return path.startsWith(p); });
+
+            if (shouldRedirect) {
+                window.location.replace('https://app.incentifind.com' + path + window.location.search + window.location.hash);
+            }
+        })();
+    </script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="navbar-logo">
+                <img src="/assets/img/icf-logo-corporateGreen.png" alt="IncentiFind Logo" />
+            </a>
+        </div>
+    </nav>
+
+    <div style="display:flex;align-items:center;justify-content:center;min-height:60vh;text-align:center;font-family:'Figtree',sans-serif;">
+        <div>
+            <h1 style="font-size:2.5rem;color:#1a3c34;margin-bottom:0.5rem;">Page Not Found</h1>
+            <p style="font-size:1.1rem;color:#666;margin-bottom:2rem;">The page you're looking for doesn't exist or has moved.</p>
+            <a href="https://www.incentifind.com" style="display:inline-block;padding:0.75rem 2rem;background:#1a3c34;color:#fff;border-radius:9999px;text-decoration:none;font-weight:700;">Go to Homepage</a>
+            <br/><br/>
+            <a href="https://app.incentifind.com" style="color:#1a3c34;text-decoration:underline;font-weight:600;">Go to App</a>
+        </div>
+    </div>
+</body>
+</html>
