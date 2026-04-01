@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IncentiFind API – Incentive Data Integration</title>
+    <meta name="description" content="Integrate IncentiFind's API into your platform to access real-time green building incentive data. Plug into your systems and deliver incentive insights to your users." />
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="IncentiFind" />
+    <meta property="og:title" content="IncentiFind API – Incentive Data Integration" />
+    <meta property="og:description" content="Integrate IncentiFind's API into your platform to access real-time green building incentive data. Plug into your systems and deliver incentive insights to your users." />
+    <meta property="og:url" content="https://incentifind.com/api" />
+    <meta property="og:image" content="https://incentifind.com/assets/img/homebanner.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IncentiFind API – Incentive Data Integration" />
+    <meta name="twitter:description" content="Integrate IncentiFind's API into your platform to access real-time green building incentive data. Plug into your systems and deliver incentive insights to your users." />
+    <meta name="twitter:image" content="https://incentifind.com/assets/img/homebanner.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-logo">
+            <img src="assets/img/icf-logo-corporateGreen.png" alt="IncentiFind Logo" />
+        </a>
+        <ul class="navbar-menu">
+            <li class="dropdown">
+                <button class="dropdown-toggle">Find Incentives <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="dropdown-menu">
+                    <a href="homeowner.html">Homeowner Search</a>
+                    <a href="commercial.html">Commercial Search</a>
+                    <a href="pricing.html">Property Report</a>
+                    <a href="icfpro.html">IncentiFind Pro</a>
+                    <a href="api.html">API</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-toggle">About Us <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="dropdown-menu">
+                    <a href="about-us.html">About Us</a>
+                    <a href="affiliate.html">Affiliate Program</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-toggle">Media <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="dropdown-menu">
+                    <a href="media.html">Press Releases</a>
+                    <a href="media.html">Tutorial Videos</a>
+                    <a href="media.html">Blogs &amp; Insights</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <button class="dropdown-toggle">Support <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg></button>
+                <div class="dropdown-menu">
+                    <a href="faq.html">FAQ</a>
+                    <a href="contact.html">Contact Sales</a>
+                    <a href="report-issue.html">Report an Issue</a>
+                </div>
+            </li>
+        </ul>
+        <div class="navbar-actions">
+            <a href="https://app.incentifind.com/login" class="btn-login">Login</a>
+            <span style="color:#174E53;">/</span>
+            <a href="https://app.incentifind.com/register" class="btn-signup">Sign Up</a>
+            <a href="https://app.incentifind.com/commercial" class="btn-cta">Run a Free Search</a>
+        </div>
+        <button class="mobile-menu-btn" onclick="document.getElementById('mobileNav').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+    </div>
+</nav>
+
+<!-- MOBILE NAV -->
+<div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-close">
+        <a href="index.html"><img src="assets/img/icf-logo-white.png" alt="IncentiFind" style="height:40px;" /></a>
+        <button onclick="document.getElementById('mobileNav').classList.remove('open')" style="background:none;border:none;color:#fff;font-size:1.5rem;cursor:pointer;">✕</button>
+    </div>
+    <div class="mobile-nav-links">
+        <a href="homeowner.html">Homeowner Search</a>
+        <a href="commercial.html">Commercial Search</a>
+        <a href="pricing.html">Property Report &amp; Pricing</a>
+        <a href="icfpro.html">IncentiFind Pro</a>
+        <a href="api.html">API</a>
+        <a href="about-us.html">About Us</a>
+        <a href="affiliate.html">Affiliate Program</a>
+        <a href="media.html">Media</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="mobile-nav-actions">
+        <a href="https://app.incentifind.com/login">Login</a>
+        <a href="https://app.incentifind.com/register">Sign Up</a>
+    </div>
+</div>
+
+<!-- HERO -->
+<section class="page-hero" style="background:linear-gradient(135deg,#0D2E30 0%,#174E53 100%);padding:5rem 2rem;">
+    <div class="hero-inner" style="max-width:800px;margin:0 auto;text-align:center;">
+        <div style="color:#fff;">
+            <h1 style="font-size:3rem;margin-bottom:1rem;color:#fff;">Incentive Data, Built for Your Platform</h1>
+            <p style="font-size:1.1rem;color:rgba(255,255,255,0.9);line-height:1.7;margin-bottom:2rem;">Plug the IncentiFind API into your systems and deliver real-time green building incentive data to your users. Integrate seamlessly with your platform — no custom development required.</p>
+            <a href="contact.html" class="btn-cta-white">Contact Sales</a>
+        </div>
+    </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section">
+    <div class="section-inner">
+        <div style="max-width:1000px;margin:0 auto;">
+            <span class="eyebrow">Why IncentiFind API</span>
+            <h2 class="section-title">Unlock incentive intelligence for your users</h2>
+
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem;">
+                <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
+                    <div style="font-size:2rem;margin-bottom:1rem;">🔗</div>
+                    <h3 style="font-size:1.125rem;font-weight:800;color:#0D2E30;margin-bottom:0.75rem;">Easy Integration</h3>
+                    <p style="color:#3d6b6e;line-height:1.6;">REST API with comprehensive documentation. Integrate with your platform in days, not months. Support for common frameworks and languages.</p>
+                </div>
+
+                <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
+                    <div style="font-size:2rem;margin-bottom:1rem;">📊</div>
+                    <h3 style="font-size:1.125rem;font-weight:800;color:#0D2E30;margin-bottom:0.75rem;">Real-Time Data</h3>
+                    <p style="color:#3d6b6e;line-height:1.6;">Access our database of 500,000+ incentive programs. Updated continuously as new programs launch and requirements change.</p>
+                </div>
+
+                <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
+                    <div style="font-size:2rem;margin-bottom:1rem;">✅</div>
+                    <h3 style="font-size:1.125rem;font-weight:800;color:#0D2E30;margin-bottom:0.75rem;">Verified Results</h3>
+                    <p style="color:#3d6b6e;line-height:1.6;">All incentive data is verified by our expert team. Eligibility matching is accurate and up-to-date with all program requirements.</p>
+                </div>
+
+                <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
+                    <div style="font-size:2rem;margin-bottom:1rem;">📈</div>
+                    <h3 style="font-size:1.125rem;font-weight:800;color:#0D2E30;margin-bottom:0.75rem;">Scalable</h3>
+                    <p style="color:#3d6b6e;line-height:1.6;">Enterprise-grade infrastructure handles high volume. Fast response times even at scale. Reliability you can depend on.</p>
+                </div>
+
+                <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
+                    <div style="font-size:2rem;margin-bottom:1rem;">🔒</div>
+                    <h3 style="font-size:1.125rem;font-weight:800;color:#0D2E30;margin-bottom:0.75rem;">Secure</h3>
+                    <p style="color:#3d6b6e;line-height:1.6;">Authentication and rate limiting built in. Enterprise security standards. Your data is protected with industry-leading practices.</p>
+                </div>
+
+                <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
+                    <div style="font-size:2rem;margin-bottom:1rem;">🤝</div>
+                    <h3 style="font-size:1.125rem;font-weight:800;color:#0D2E30;margin-bottom:0.75rem;">Expert Support</h3>
+                    <p style="color:#3d6b6e;line-height:1.6;">Dedicated support team. Technical guidance through integration. Help getting the most out of our platform.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- USE CASES -->
+<section class="section" style="background:#EEF6F6;">
+    <div class="section-inner">
+        <div style="max-width:900px;margin:0 auto;">
+            <span class="eyebrow">Use Cases</span>
+            <h2 class="section-title">How partners use our API</h2>
+
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem;">
+                <div>
+                    <h3 style="font-size:1.1rem;font-weight:700;color:#0D2E30;margin-bottom:0.75rem;">For Real Estate Platforms</h3>
+                    <p style="color:#3d6b6e;line-height:1.7;">Embed incentive discovery in your property listings. Show homebuyers and commercial investors available incentives at a glance. Increase engagement and conversion.</p>
+                </div>
+                <div>
+                    <h3 style="font-size:1.1rem;font-weight:700;color:#0D2E30;margin-bottom:0.75rem;">For Energy / Sustainability SaaS</h3>
+                    <p style="color:#3d6b6e;line-height:1.7;">Complement your energy audits and sustainability reports with incentive data. Strengthen your value proposition with actionable financial insights.</p>
+                </div>
+                <div>
+                    <h3 style="font-size:1.1rem;font-weight:700;color:#0D2E30;margin-bottom:0.75rem;">For Contractor Networks</h3>
+                    <p style="color:#3d6b6e;line-height:1.7;">Help your installers and contractors find and capture more incentives for customers. Close more deals with better ROI calculations.</p>
+                </div>
+                <div>
+                    <h3 style="font-size:1.1rem;font-weight:700;color:#0D2E30;margin-bottom:0.75rem;">For Lenders &amp; Financing</h3>
+                    <p style="color:#3d6b6e;line-height:1.7;">Reduce financing costs by showing lenders available incentives. Factor incentive savings into loan terms. Improve approval rates for green projects.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+    <h2>Ready to integrate with IncentiFind?</h2>
+    <p>Our team is here to help you build the integration that fits your platform. Let's talk about what's possible.</p>
+    <a href="contact.html" class="btn-cta-white">Contact Sales</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <img class="footer-logo" src="assets/img/icf-logo-white.png" alt="IncentiFind" />
+            <p class="footer-tagline">The go-to database for green building incentives across all 50 states.</p>
+            <div class="footer-address">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" style="flex-shrink:0;margin-top:2px;"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                <p>1801 Main Street, Suite 1300<br />Houston, Texas 77002</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/company/incentifind/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M22.23 0H1.77C.79 0 0 .79 0 1.77v20.46c0 .98.79 1.77 1.77 1.77h20.46c.98 0 1.77-.79 1.77-1.77V1.77C24 .79 23.21 0 22.23 0zM7.5 20.2H4.2V9.4h3.3v10.8zm-1.65-12.3c-1.05 0-1.9-.88-1.9-1.9s.88-1.9 1.9-1.9 1.9.88 1.9 1.9-.88 1.9-1.9 1.9zm14.4 12.3h-3.3v-5.6c0-1.3-.03-2.98-1.8-2.98-1.8 0-2.07 1.4-2.07 2.86v5.7h-3.3v-10.8h3.2v1.5h.04c.45-.83 1.57-1.7 3.18-1.7 3.4 0 4.02 2.25 4.02 5.17v6.03z" clip-rule="evenodd"/></svg>
+                </a>
+                <a href="https://www.youtube.com/@IncentiFind" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                    <svg fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd"/></svg>
+                </a>
+            </div>
+            <div class="footer-certs">
+                <img src="assets/img/mbe-cert.png" alt="MBE Certified" />
+                <img src="assets/img/wbe-cert.png" alt="WBE Certified" />
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <div class="footer-stats">
+                <div class="footer-stat">
+                    <p>Over</p>
+                    <span>34.2M</span>
+                    <p>Sq ft served</p>
+                </div>
+                <div class="footer-stat">
+                    <p>Over</p>
+                    <span>39.8M</span>
+                    <p>kWh saved/yr</p>
+                </div>
+                <div class="footer-stat">
+                    <p>Over</p>
+                    <span>19.4M</span>
+                    <p>Gallons saved/yr</p>
+                </div>
+                <div class="footer-stat">
+                    <p>Over</p>
+                    <span>16.8K</span>
+                    <p>kWh generated/yr</p>
+                </div>
+            </div>
+
+            <div class="footer-nav">
+                <div class="footer-nav-group">
+                    <h4>Platform</h4>
+                    <a href="homeowner.html">Homeowner Search</a>
+                    <a href="commercial.html">Commercial Search</a>
+                    <a href="pricing.html">Property Report</a>
+                    <a href="icfpro.html">IncentiFind Pro</a>
+                    <a href="api.html">API</a>
+                </div>
+                <div class="footer-nav-group">
+                    <h4>Company</h4>
+                    <a href="about-us.html">About Us</a>
+                    <a href="affiliate.html">Affiliate Program</a>
+                    <a href="media.html">Media</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="footer-nav-group">
+                    <h4>Support</h4>
+                    <a href="faq.html">FAQ</a>
+                    <a href="report-issue.html">Report an Issue</a>
+                    <a href="tos.html">Privacy Policy</a>
+                    <a href="tos.html">Terms of Service</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; <script>document.write(new Date().getFullYear())</script> IncentiFind. All rights reserved.</span>
+                <div class="footer-bottom-links">
+                    <a href="tos.html">Privacy</a>
+                    <a href="tos.html">Terms</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Navbar scroll shadow
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 20);
+});
+</script>
+
+</body>
+</html>
