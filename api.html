@@ -99,59 +99,76 @@
 </div>
 
 <!-- HERO -->
-<section class="page-hero" style="background:linear-gradient(135deg,#0D2E30 0%,#174E53 100%);padding:5rem 2rem;">
-    <div class="hero-inner" style="max-width:800px;margin:0 auto;text-align:center;">
-        <div style="color:#fff;">
-            <h1 style="font-size:3rem;margin-bottom:1rem;color:#fff;">Incentive Data, Built for Your Platform</h1>
-            <p style="font-size:1.1rem;color:rgba(255,255,255,0.9);line-height:1.7;margin-bottom:2rem;">Plug the IncentiFind API into your systems and deliver real-time green building incentive data to your users. Integrate seamlessly with your platform — no custom development required.</p>
-            <a href="contact.html" class="btn-cta-white">Contact Sales</a>
+<section style="background:linear-gradient(135deg, #0D2E30 0%, #174E53 100%);padding:6rem 2rem;position:relative;overflow:hidden;">
+    <div style="position:absolute;top:-100px;right:-100px;width:400px;height:400px;background:rgba(68,160,139,0.1);border-radius:50%;"></div>
+    <div style="position:absolute;bottom:-50px;left:-50px;width:300px;height:300px;background:rgba(68,160,139,0.08);border-radius:50%;"></div>
+
+    <div style="max-width:900px;margin:0 auto;position:relative;z-index:1;">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;">
+            <div>
+                <div style="background:rgba(255,255,255,0.15);color:#44A08B;padding:0.5rem 1rem;border-radius:9999px;display:inline-block;font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:1.5rem;">For Developers &amp; Partners</div>
+                <h1 style="font-size:2.5rem;font-weight:900;color:#fff;line-height:1.1;margin-bottom:1.25rem;">Plug Incentive Data Into Your Platform</h1>
+                <p style="font-size:1.1rem;color:rgba(255,255,255,0.9);line-height:1.7;margin-bottom:2rem;">Our REST API gives you access to real-time incentive data from 500,000+ programs across all 50 states. Integrate in days, not months.</p>
+                <a href="contact.html" class="btn-primary" style="display:inline-block;">Get in Touch</a>
+            </div>
+            <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:1rem;padding:2rem;backdrop-filter:blur(10px);">
+                <div style="font-family:monospace;font-size:0.85rem;color:#44A08B;line-height:1.8;">
+                    <div>GET /api/v1/incentives</div>
+                    <div style="color:rgba(255,255,255,0.5);margin-top:1rem;">property_address: "123 Main St"</div>
+                    <div style="color:rgba(255,255,255,0.5);">property_type: "residential"</div>
+                    <div style="color:rgba(255,255,255,0.5);">state: "CA"</div>
+                    <div style="color:#44A08B;margin-top:1rem;">200 OK</div>
+                    <div style="color:rgba(255,255,255,0.5);margin-top:0.5rem;">{</div>
+                    <div style="color:rgba(255,255,255,0.5);">&nbsp;&nbsp;"incentives": [...]</div>
+                    <div style="color:rgba(255,255,255,0.5);">&nbsp;&nbsp;"total_savings": "$4,200"</div>
+                    <div style="color:rgba(255,255,255,0.5);">}</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- BENEFITS -->
+<!-- CAPABILITIES -->
 <section class="section">
     <div class="section-inner">
-        <div style="max-width:1000px;margin:0 auto;">
-            <span class="eyebrow">Why IncentiFind API</span>
-            <h2 class="section-title">Unlock incentive intelligence for your users</h2>
+        <span class="eyebrow">API Capabilities</span>
+        <h2 class="section-title">Everything you need to deliver incentive intelligence</h2>
 
-            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;margin-top:3rem;">
-                <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
-                    <div style="font-size:2rem;margin-bottom:1rem;">🔗</div>
-                    <h3 style="font-size:1.125rem;font-weight:800;color:#0D2E30;margin-bottom:0.75rem;">Easy Integration</h3>
-                    <p style="color:#3d6b6e;line-height:1.6;">REST API with comprehensive documentation. Integrate with your platform in days, not months. Support for common frameworks and languages.</p>
-                </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;margin-top:3rem;">
+            <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
+                <div style="font-size:1.75rem;margin-bottom:1rem;">🔍</div>
+                <h3 style="font-size:1.05rem;font-weight:800;color:#0D2E30;margin-bottom:0.5rem;">Incentive Search</h3>
+                <p style="color:#3d6b6e;font-size:0.95rem;line-height:1.6;">Search our database by address, property type, state, or custom criteria. Get verified incentives instantly.</p>
+            </div>
 
-                <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
-                    <div style="font-size:2rem;margin-bottom:1rem;">📊</div>
-                    <h3 style="font-size:1.125rem;font-weight:800;color:#0D2E30;margin-bottom:0.75rem;">Real-Time Data</h3>
-                    <p style="color:#3d6b6e;line-height:1.6;">Access our database of 500,000+ incentive programs. Updated continuously as new programs launch and requirements change.</p>
-                </div>
+            <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
+                <div style="font-size:1.75rem;margin-bottom:1rem;">📊</div>
+                <h3 style="font-size:1.05rem;font-weight:800;color:#0D2E30;margin-bottom:0.5rem;">Real-Time Data</h3>
+                <p style="color:#3d6b6e;font-size:0.95rem;line-height:1.6;">500,000+ programs updated continuously. New incentives, program changes, and requirements kept current.</p>
+            </div>
 
-                <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
-                    <div style="font-size:2rem;margin-bottom:1rem;">✅</div>
-                    <h3 style="font-size:1.125rem;font-weight:800;color:#0D2E30;margin-bottom:0.75rem;">Verified Results</h3>
-                    <p style="color:#3d6b6e;line-height:1.6;">All incentive data is verified by our expert team. Eligibility matching is accurate and up-to-date with all program requirements.</p>
-                </div>
+            <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
+                <div style="font-size:1.75rem;margin-bottom:1rem;">✅</div>
+                <h3 style="font-size:1.05rem;font-weight:800;color:#0D2E30;margin-bottom:0.5rem;">Verified Results</h3>
+                <p style="color:#3d6b6e;font-size:0.95rem;line-height:1.6;">All data verified by our expert team. Eligibility matching accurate to program requirements.</p>
+            </div>
 
-                <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
-                    <div style="font-size:2rem;margin-bottom:1rem;">📈</div>
-                    <h3 style="font-size:1.125rem;font-weight:800;color:#0D2E30;margin-bottom:0.75rem;">Scalable</h3>
-                    <p style="color:#3d6b6e;line-height:1.6;">Enterprise-grade infrastructure handles high volume. Fast response times even at scale. Reliability you can depend on.</p>
-                </div>
+            <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
+                <div style="font-size:1.75rem;margin-bottom:1rem;">💰</div>
+                <h3 style="font-size:1.05rem;font-weight:800;color:#0D2E30;margin-bottom:0.5rem;">Estimated Savings</h3>
+                <p style="color:#3d6b6e;font-size:0.95rem;line-height:1.6;">Get soft estimates of average savings per property. Help users understand financial impact.</p>
+            </div>
 
-                <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
-                    <div style="font-size:2rem;margin-bottom:1rem;">🔒</div>
-                    <h3 style="font-size:1.125rem;font-weight:800;color:#0D2E30;margin-bottom:0.75rem;">Secure</h3>
-                    <p style="color:#3d6b6e;line-height:1.6;">Authentication and rate limiting built in. Enterprise security standards. Your data is protected with industry-leading practices.</p>
-                </div>
+            <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
+                <div style="font-size:1.75rem;margin-bottom:1rem;">📈</div>
+                <h3 style="font-size:1.05rem;font-weight:800;color:#0D2E30;margin-bottom:0.5rem;">Scalable &amp; Fast</h3>
+                <p style="color:#3d6b6e;font-size:0.95rem;line-height:1.6;">Enterprise infrastructure handles high volume. Sub-second response times at any scale.</p>
+            </div>
 
-                <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
-                    <div style="font-size:2rem;margin-bottom:1rem;">🤝</div>
-                    <h3 style="font-size:1.125rem;font-weight:800;color:#0D2E30;margin-bottom:0.75rem;">Expert Support</h3>
-                    <p style="color:#3d6b6e;line-height:1.6;">Dedicated support team. Technical guidance through integration. Help getting the most out of our platform.</p>
-                </div>
+            <div style="background:#F8FBFC;border-radius:1rem;padding:2rem;border:1px solid #E2ECED;">
+                <div style="font-size:1.75rem;margin-bottom:1rem;">🔒</div>
+                <h3 style="font-size:1.05rem;font-weight:800;color:#0D2E30;margin-bottom:0.5rem;">Secure &amp; Reliable</h3>
+                <p style="color:#3d6b6e;font-size:0.95rem;line-height:1.6;">API keys, rate limiting, and enterprise security. 99.9% uptime SLA.</p>
             </div>
         </div>
     </div>
@@ -160,27 +177,32 @@
 <!-- USE CASES -->
 <section class="section" style="background:#EEF6F6;">
     <div class="section-inner">
-        <div style="max-width:900px;margin:0 auto;">
-            <span class="eyebrow">Use Cases</span>
-            <h2 class="section-title">How partners use our API</h2>
+        <span class="eyebrow">Who Uses Our API</span>
+        <h2 class="section-title">Trusted by platforms and integrators</h2>
 
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:3rem;">
-                <div>
-                    <h3 style="font-size:1.1rem;font-weight:700;color:#0D2E30;margin-bottom:0.75rem;">For Real Estate Platforms</h3>
-                    <p style="color:#3d6b6e;line-height:1.7;">Embed incentive discovery in your property listings. Show homebuyers and commercial investors available incentives at a glance. Increase engagement and conversion.</p>
-                </div>
-                <div>
-                    <h3 style="font-size:1.1rem;font-weight:700;color:#0D2E30;margin-bottom:0.75rem;">For Energy / Sustainability SaaS</h3>
-                    <p style="color:#3d6b6e;line-height:1.7;">Complement your energy audits and sustainability reports with incentive data. Strengthen your value proposition with actionable financial insights.</p>
-                </div>
-                <div>
-                    <h3 style="font-size:1.1rem;font-weight:700;color:#0D2E30;margin-bottom:0.75rem;">For Contractor Networks</h3>
-                    <p style="color:#3d6b6e;line-height:1.7;">Help your installers and contractors find and capture more incentives for customers. Close more deals with better ROI calculations.</p>
-                </div>
-                <div>
-                    <h3 style="font-size:1.1rem;font-weight:700;color:#0D2E30;margin-bottom:0.75rem;">For Lenders &amp; Financing</h3>
-                    <p style="color:#3d6b6e;line-height:1.7;">Reduce financing costs by showing lenders available incentives. Factor incentive savings into loan terms. Improve approval rates for green projects.</p>
-                </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:3rem;">
+            <div style="background:#fff;border-radius:1rem;padding:2rem;border:1px solid #DDECEE;">
+                <div style="font-size:1.5rem;margin-bottom:1rem;">🏠</div>
+                <h3 style="font-size:1.1rem;font-weight:700;color:#0D2E30;margin-bottom:0.75rem;">Real Estate Platforms</h3>
+                <p style="color:#3d6b6e;line-height:1.7;">Embed incentive discovery in property listings. Show buyers and investors available incentives. Increase engagement and close more deals.</p>
+            </div>
+
+            <div style="background:#fff;border-radius:1rem;padding:2rem;border:1px solid #DDECEE;">
+                <div style="font-size:1.5rem;margin-bottom:1rem;">⚡</div>
+                <h3 style="font-size:1.1rem;font-weight:700;color:#0D2E30;margin-bottom:0.75rem;">Energy &amp; Sustainability</h3>
+                <p style="color:#3d6b6e;line-height:1.7;">Add financial incentive data to energy audits and sustainability reports. Strengthen your value proposition with actionable insights.</p>
+            </div>
+
+            <div style="background:#fff;border-radius:1rem;padding:2rem;border:1px solid #DDECEE;">
+                <div style="font-size:1.5rem;margin-bottom:1rem;">🔧</div>
+                <h3 style="font-size:1.1rem;font-weight:700;color:#0D2E30;margin-bottom:0.75rem;">Contractors &amp; Installers</h3>
+                <p style="color:#3d6b6e;line-height:1.7;">Help your installers find and capture more incentives for customers. Close bigger deals with better ROI calculations and rebate data.</p>
+            </div>
+
+            <div style="background:#fff;border-radius:1rem;padding:2rem;border:1px solid #DDECEE;">
+                <div style="font-size:1.5rem;margin-bottom:1rem;">💳</div>
+                <h3 style="font-size:1.1rem;font-weight:700;color:#0D2E30;margin-bottom:0.75rem;">Lenders &amp; Financing</h3>
+                <p style="color:#3d6b6e;line-height:1.7;">Show lenders available incentives to reduce financing costs. Factor savings into loan terms. Improve approval rates for green projects.</p>
             </div>
         </div>
     </div>
@@ -189,7 +211,7 @@
 <!-- CTA BANNER -->
 <section class="cta-banner">
     <h2>Ready to integrate with IncentiFind?</h2>
-    <p>Our team is here to help you build the integration that fits your platform. Let's talk about what's possible.</p>
+    <p>Get access to our API, technical documentation, and dedicated developer support. Let's build something great together.</p>
     <a href="contact.html" class="btn-cta-white">Contact Sales</a>
 </section>
 
@@ -280,7 +302,7 @@
 
 <script>
 // Navbar scroll shadow
-const navbar = document.getElementById('navbar');
+const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 20);
 });
