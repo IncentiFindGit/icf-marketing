@@ -189,9 +189,16 @@ h1, h2, h3, h4 { line-height: 1.1; letter-spacing: -0.025em; font-weight: 800; }
   font-size: 0.875rem;
   padding: 0.5rem 0.75rem;
   border-radius: var(--radius-sm);
-  transition: background var(--transition);
+  transition: background var(--transition), border-color var(--transition);
 }
 .btn-login:hover, .btn-signup:hover { background: var(--bg-green); text-decoration: none; }
+.btn-signup {
+  border: 1.5px solid var(--corporate-green);
+}
+.btn-signup:hover {
+  border-color: var(--primary-green);
+  color: var(--primary-green);
+}
 
 .btn-cta {
   text-decoration: none;
