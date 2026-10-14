@@ -270,5 +270,19 @@
     </div>
 </footer>
 
+<script>
+    // A partner link (?aff_id=...) carries into sign-up, where the account is tagged
+    // and the partner's discount is applied at checkout.
+    (function () {
+        var aff = new URLSearchParams(location.search).get('aff_id');
+        if (!aff) return;
+        document.querySelectorAll('a[href^="https://app.incentifind.com/register"]').forEach(function (a) {
+            var url = new URL(a.href);
+            url.searchParams.set('aff_id', aff);
+            a.href = url.toString();
+        });
+    })();
+</script>
+
 </body>
 </html>
