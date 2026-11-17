@@ -1281,3 +1281,109 @@ details .faq-answer {
   .about-text h1 { font-size: 2.5rem; }
   .footer-stats { display: grid; grid-template-columns: 1fr 1fr; }
 }
+
+/* === BLACK FRIDAY PROMO (rendered by assets/js/black-friday.js) === */
+.bf-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem 1rem;
+  padding: 0.625rem 1.25rem;
+  background: var(--primary-green);
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+}
+.bf-banner strong { color: var(--incenti-yellow); font-weight: 800; }
+.bf-banner-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  color: var(--incenti-yellow);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.bf-banner-cta::after { content: '→'; display: inline-block; transition: transform var(--transition); }
+.bf-banner:hover .bf-banner-cta { text-decoration: underline; text-underline-offset: 3px; }
+.bf-banner:hover .bf-banner-cta::after { transform: translateX(3px); }
+.bf-banner:focus-visible { outline: 3px solid var(--incenti-yellow); outline-offset: -3px; }
+
+.bf-promo { padding: 2.5rem 2rem; background: #fff; }
+.bf-promo-card {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 2rem 3.5rem;
+  padding: 3.5rem;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, #1a5a61 0%, var(--primary-green) 55%, #091a1b 100%);
+  box-shadow: var(--shadow-lg);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.bf-promo-card::before {
+  content: '';
+  position: absolute;
+  top: -140px; right: -100px;
+  width: 460px; height: 460px;
+  background: radial-gradient(circle, rgba(252,190,0,0.14) 0%, transparent 70%);
+  pointer-events: none;
+}
+.bf-promo-card > * { position: relative; }
+.bf-promo-teaser { grid-template-columns: minmax(0, 1fr); }
+.bf-promo-copy h2 {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+.bf-promo-copy p {
+  color: rgba(255,255,255,0.75);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+.bf-promo-facts {
+  list-style: none;
+  padding: 0.5rem 1.5rem;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-lg);
+}
+.bf-promo-facts li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.bf-promo-facts li:last-child { border-bottom: none; }
+.bf-promo-facts .check-icon { color: var(--friendly-green); }
+.bf-promo-fine {
+  grid-column: 1 / -1;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.6);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .bf-banner { font-size: 0.875rem; line-height: 1.5; padding: 0.625rem 1rem; }
+  .bf-promo { padding: 1.5rem 1rem; }
+  .bf-promo-card { grid-template-columns: minmax(0, 1fr); padding: 2.25rem 1.5rem; gap: 1.75rem; }
+  .bf-promo-copy p { margin-bottom: 1.5rem; }
+  .bf-promo-copy .btn-yellow { width: 100%; justify-content: center; padding: 1rem 1.5rem; }
+  .bf-promo-facts { padding: 0.25rem 1.25rem; }
+}
